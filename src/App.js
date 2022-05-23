@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Switch, Route, Link, useParams } from 'react-router-dom';
 
 
 const ProductDetail = () => {
 
   const { product } = useParams();
+
+  useEffect(() => {
+
+  }, [])
 
   return (
     <h1>Product Detail {product}</h1>
